@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic Tanger | Professional Dental Care in Morocco</title>
+    <meta name="description" content="Professional dental clinic in Tanger, Morocco offering comprehensive dental care, cosmetic dentistry, and emergency dental services with modern technology and experienced dentists.">
+    <meta name="keywords" content="dentist Tanger, dental clinic Morocco, dental care Tanger, cosmetic dentistry, emergency dentist, dental implants, teeth whitening">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0EA5E9",
+                        secondary: "#0369A1",
+                        accent: "#F0F9FF",
+                        dental: {
+                            blue: "#0EA5E9",
+                            light: "#F0F9FF",
+                            dark: "#0369A1"
+                        }
+                    },
+                    fontFamily: {
+                        'heading': ['Montserrat', 'system-ui', 'sans-serif'],
+                        'body': ['Open Sans', 'system-ui', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-white font-body text-gray-700">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                        <i class="fas fa-tooth text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-heading font-bold text-dental-dark">Dental Clinic Tanger</h1>
+                        <p class="text-xs text-gray-500">Professional Dental Care</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    <a href="#doctors" class="text-gray-700 hover:text-primary font-medium transition-colors">Our Team</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                </nav>
+
+                <!-- Contact & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-dental-light rounded-full flex items-center justify-center">
+                            <i class="fas fa-phone text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Emergency Call</p>
+                            <a href="tel:+212612345678" class="font-bold text-dental-dark">+212 612-345-678</a>
+                        </div>
+                    </div>
+                    
+                    <button class="lg:hidden text-gray-700" id="mobileMenuButton">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                    
+                    <a href="#appointment" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-full font-medium transition-colors hidden md:inline-block">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="hidden lg:hidden bg-white border-t mt-4 py-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium py-2 border-b">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary font-medium py-2 border-b">Services</a>
+                    <a href="#doctors" class="text-gray-700 hover:text-primary font-medium py-2 border-b">Our Team</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium py-2 border-b">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium py-2 border-b">Contact</a>
+                    <a href="#appointment" class="bg-primary text-white text-center py-3 rounded-full font-medium mt-2">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden bg-gradient-to-r from-dental-light to-white py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in">
+                    <div class="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
+                        <span>★</span>
+                        <span class="font-medium">Trusted Dental Care in Tanger</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dental-dark mb-6">
+                        Your Smile,<br>
+                        <span class="text-primary">Our Priority</span>
+                    </h1>
+                    
+                    <p class="text-lg text-gray-600 mb-8">
+                        Experience world-class dental care in the heart of Tanger, Morocco. Our modern clinic combines advanced technology with compassionate care for your complete dental health.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#appointment" class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-full font-medium transition-colors">
+                            <i class="fas fa-calendar-check mr-2"></i>
+                            Book Appointment
+                        </a>
+                        <a href="tel:+212612345678" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-medium transition-colors">
+                            <i class="fas fa-phone mr-2"></i>
+                            Call Now
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">15+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">5000+</div>
+                            <div class="text-gray-600">Happy Patients</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">24/7</div>
+                            <div class="text-gray-600">Emergency Service</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative animate-slide-up">
+                    <div class="relative z-10">
+                        <img 
+                            src="https://picsum.photos/600/700?random=8" 
+                            alt="Modern dental clinic interior in Tanger" 
+                            class="w-full rounded-2xl shadow-2xl"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 blur-2xl rounded-3xl"></div>
+                    
+                    <!-- Floating Info Cards -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg max-w-xs">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center">
+                                <i class="fas fa-clock text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold">Opening Hours</h3>
+                                <p class="text-sm text-gray-600">Mon-Sat: 8:00 AM - 8:00 PM</p>
+                                <p class="text-sm text-gray-600">Sun: Emergency Only</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-dental-dark mb-4">Our Dental Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive dental care using the latest technology and techniques</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/400/300?random=9" 
+                            alt="General Dentistry" 
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-tooth text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold mb-3">General Dentistry</h3>
+                        <p class="text-gray-600 mb-4">Complete dental checkups, cleanings, fillings, and preventive care for optimal oral health.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Dental Checkups</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Teeth Cleaning</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Fillings & Restorations</span>
+                            </li>
+                        </ul>
+                        <a href="#appointment" class="text-primary font-medium hover:text-secondary inline-flex items-center">
+                            Book Now
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/400/300?random=10" 
+                            alt="Cosmetic Dentistry" 
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-smile text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold mb-3">Cosmetic Dentistry</h3>
+                        <p class="text-gray-600 mb-4">Transform your smile with our cosmetic treatments including whitening, veneers, and more.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Teeth Whitening</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Dental Veneers</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Smile Makeovers</span>
+                            </li>
+                        </ul>
+                        <a href="#appointment" class="text-primary font-medium hover:text-secondary inline-flex items-center">
+                            Book Now
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/400/300?random=11" 
+                            alt="Dental Implants" 
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-teeth text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold mb-3">Dental Implants</h3>
+                        <p class="text-gray-600 mb-4">Permanent solution for missing teeth with natural-looking and functional dental implants.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Single Tooth Implants</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Implant-Supported Bridges</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Full Mouth Reconstruction</span>
+                            </li>
+                        </ul>
+                        <a href="#appointment" class="text-primary font-medium hover:text-secondary inline-flex items-center">
+                            Book Now
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/400/300?random=12" 
+                            alt="Orthodontics" 
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-teeth-open text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold mb-3">Orthodontics</h3>
+                        <p class="text-gray-600 mb-4">Straighten your teeth with traditional braces or clear aligners for a perfect smile.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Traditional Braces</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Invisalign</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Retainers</span>
+                            </li>
+                        </ul>
+                        <a href="#appointment" class="text-primary font-medium hover:text-secondary inline-flex items-center">
+                            Book Now
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/400/300?random=13" 
+                            alt="Emergency Dental" 
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-ambulance text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold mb-3">Emergency Dental</h3>
+                        <p class="text-gray-600 mb-4">24/7 emergency dental care for toothaches, broken teeth, and dental trauma.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Toothache Relief</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Broken Tooth Repair</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Dental Trauma Care</span>
+                            </li>
+                        </ul>
+                        <a href="tel:+212612345678" class="text-primary font-medium hover:text-secondary inline-flex items-center">
+                            Call Emergency
+                            <i class="fas fa-phone ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/400/300?random=14" 
+                            alt="Pediatric Dentistry" 
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-child text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold mb-3">Pediatric Dentistry</h3>
+                        <p class="text-gray-600 mb-4">Gentle dental care for children in a friendly and comfortable environment.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Child Dental Checkups</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Fluoride Treatments</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                <span>Dental Sealants</span>
+                            </li>
+                        </ul>
+                        <a href="#appointment" class="text-primary font-medium hover:text-secondary inline-flex items-center">
+                            Book Now
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="doctors" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-dental-dark mb-4">Meet Our Dental Team</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Experienced and compassionate dental professionals dedicated to your smile</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Doctor 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-64 overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/400/400?random=15" 
+                            alt="Dr. Ahmed Benali - Lead Dentist" 
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold mb-1">Dr. Ahmed Benali</h3>
+                        <p class="text-primary font-medium mb-3">Lead Dentist & Founder</p>
+                        <p class="text-gray-600 mb-4">Specializing in cosmetic dentistry and dental implants with 15+ years of experience.</p>
+                        <div class="flex justify-center space-x-4">
+                            <span class="bg-dental-light text-primary px-3 py-1 rounded-full text-sm">Implants</span>
+                            <span class="bg-dental-light text-primary px-3 py-1 rounded-full text-sm">Cosmetic</span>
+                            <span class="bg-dental-light text-primary px-3 py-1 rounded-full text-sm">Surgery</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Doctor 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-64 overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/400/400?random=16" 
+                            alt="Dr. Fatima Zahra - Orthodontist" 
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold mb-1">Dr. Fatima Zahra</h3>
+                        <p class="text-primary font-medium mb-3">Orthodontist Specialist</p>
+                        <p class="text-gray-600 mb-4">Expert in braces, Invisalign, and pediatric orthodontics with 10+ years experience.</p>
+                        <div class="flex justify-center space-x-4">
+                            <span class="bg-dental-light text-primary px-3 py-1 rounded-full text-sm">Braces</span>
+                            <span class="bg-dental-light text-primary px-3 py-1 rounded-full text-sm">Invisalign</span>
+                            <span class="bg-dental-light text-primary px-3 py-1 rounded-full text-sm">Pediatric</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Doctor 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-64 overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/400/400?random=17" 
+                            alt="Dr. Karim Alami - Periodontist" 
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold mb-1">Dr. Karim Alami</h3>
+                        <p class="text-primary font-medium mb-3">Periodontist & Oral Surgeon</p>
+                        <p class="text-gray-600 mb-4">Specialist in gum disease treatment, dental surgery, and complex extractions.</p>
+                        <div class="flex justify-center space-x-4">
+                            <span class="bg-dental-light text-primary px-3 py-1 rounded-full text-sm">Surgery</span>
+                            <span class="bg-dental-light text-primary px-3 py-1 rounded-full text-sm">Gum Care</span>
+                            <span class="bg-dental-light text-primary px-3 py-1 rounded-full text-sm">Implants</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Location -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-dental-dark mb-6">About Our Clinic in Tanger</h2>
+                    <div class="space-y-4 text-gray-600">
+                        <p>
+                            Located in the heart of Tanger, Morocco, our dental clinic has been serving the community for over 15 years. We combine modern dental technology with traditional Moroccan hospitality to provide exceptional dental care.
+                        </p>
+                        <p>
+                            Our clinic is equipped with state-of-the-art dental equipment including digital X-rays, intraoral cameras, and laser dentistry tools. We follow strict sterilization protocols to ensure your safety.
+                        </p>
+                        <p>
+                            We offer services in multiple languages including Arabic, French, English, and Spanish to accommodate our diverse patient community in Tanger.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold">Sterilized Equipment</h4>
+                                <p class="text-sm text-gray-500">Highest safety standards</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center">
+                                <i class="fas fa-language text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold">Multilingual Staff</h4>
+                                <p class="text-sm text-gray-500">Arabic, French, English</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center">
+                                <i class="fas fa-parking text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold">Free Parking</h4>
+                                <p class="text-sm text-gray-500">Convenient location</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-dental-light rounded-full flex items-center justify-center">
+                                <i class="fas fa-wheelchair text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold">Wheelchair Access</h4>
+                                <p class="text-sm text-gray-500">Fully accessible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-heading font-bold text-dental-dark mb-6">Clinic Location</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-dental-light rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-heading font-bold mb-1">Address</h4>
+                                    <p class="text-gray-600">123 Avenue Mohammed VI<br>Tanger 90000, Morocco</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-dental-light rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-clock text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-heading font-bold mb-1">Opening Hours</h4>
+                                    <div class="space-y-1">
+                                        <div class="flex justify-between">
+                                            <span class="text-gray-600">Monday - Friday</span>
+                                            <span class="font-medium">8:00 AM - 8:00 PM</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span class="text-gray-600">Saturday</span>
+                                            <span class="font-medium">9:00 AM - 6:00 PM</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span class="text-gray-600">Sunday</span>
+                                            <span class="font-medium text-primary">Emergency Only</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-dental-light rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-heading font-bold mb-1">Contact Information</h4>
+                                    <div class="space-y-2">
+                                        <p class="text-gray-600">
+                                            <span class="font-medium">Phone:</span> 
+                                            <a href="tel:+212612345678" class="text-primary hover:text-secondary">+212 612-345-678</a>
+                                        </p>
+                                        <p class="text-gray-600">
+                                            <span class="font-medium">Emergency:</span> 
+                                            <a href="tel:+212612345679" class="text-primary hover:text-secondary">+212 612-345-679</a>
+                                        </p>
+                                        <p class="text-gray-600">
+                                            <span class="font-medium">Email:</span> 
+                                            <a href="mailto:info@dentalclinictanger.com" class="text-primary hover:text-secondary">info@dentalclinictanger.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 h-64 rounded-lg overflow-hidden">
+                            <!-- Map placeholder - in real implementation, embed Google Maps -->
+                            <div class="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i class="fas fa-map-marked-alt text-primary text-4xl mb-4"></i>
+                                    <p class="text-gray-600">Map Location</p>
+                                    <p class="text-sm text-gray-500">Tanger, Morocco</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section id="appointment" class="py-16 bg-gradient-to-r from-primary to-secondary">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Book Your Appointment</h2>
+                    <p class="text-white/80">Schedule your dental visit online or call us directly</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-3">
+                        <!-- Contact Info Sidebar -->
+                        <div class="bg-dental-dark text-white p-8 lg:p-10">
+                            <h3 class="text-2xl font-heading font-bold mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6 mb-8">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">Our Location</h4>
+                                        <p class="text-white/80">123 Avenue Mohammed VI<br>Tanger 90000, Morocco</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">Phone Number</h4>
+                                        <p class="text-white/80">
+                                            <a href="tel:+212612345678" class="hover:text-white">+212 612-345-678</a><br>
+                                            <span class="text-sm">Emergency: +212 612-345-679</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">Email Address</h4>
+                                        <p class="text-white/80">
+                                            <a href="mailto:info@dentalclinictanger.com" class="hover:text-white">info@dentalclinictanger.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">Working Hours</h4>
+                                        <p class="text-white/80">
+                                            Mon-Fri: 8:00 AM - 8:00 PM<br>
+                                            Saturday: 9:00 AM - 6:00 PM<br>
+                                            Sunday: Emergency Only
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-6 border-t border-white/20">
+                                <h4 class="font-bold mb-4">Emergency Dental Care</h4>
+                                <p class="text-white/80 mb-4">Available 24/7 for dental emergencies</p>
+                                <a href="tel:+212612345679" class="inline-flex items-center text-primary bg-white hover:bg-gray-100 px-6 py-3 rounded-full font-medium transition-colors">
+                                    <i class="fas fa-phone mr-2"></i>
+                                    Call Emergency
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Appointment Form -->
+                        <div class="p-8 lg:p-10 lg:col-span-2">
+                            <form id="appointmentForm" class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="firstName" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                                        <input type="text" id="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors">
+                                    </div>
+                                    <div>
+                                        <label for="lastName" class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                                        <input type="text" id="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors">
+                                    </div>
+                                </div>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number *</label>
+                                        <input type="tel" id="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                        <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors">
+                                    </div>
+                                </div>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="appointmentDate" class="block text-gray-700 font-medium mb-2">Preferred Date *</label>
+                                        <input type="date" id="appointmentDate" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors">
+                                    </div>
+                                    <div>
+                                        <label for="appointmentTime" class="block text-gray-700 font-medium mb-2">Preferred Time *</label>
+                                        <select id="appointmentTime" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors">
+                                            <option value="">Select Time</option>
+                                            <option value="08:00">08:00 AM</option>
+                                            <option value="09:00">09:00 AM</option>
+                                            <option value="10:00">10:00 AM</option>
+                                            <option value="11:00">11:00 AM</option>
+                                            <option value="14:00">02:00 PM</option>
+                                            <option value="15:00">03:00 PM</option>
+                                            <option value="16:00">04:00 PM</option>
+                                            <option value="17:00">05:00 PM</option>
+                                            <option value="18:00">06:00 PM</option>
+                                            <option value="19:00">07:00 PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label for="service" class="block text-gray-700 font-medium mb-2">Service Required *</label>
+                                    <select id="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors">
+                                        <option value="">Select Service</option>
+                                        <option value="general">General Dentistry</option>
+                                        <option value="cosmetic">Cosmetic Dentistry</option>
+                                        <option value="implants">Dental Implants</option>
+                                        <option value="orthodontics">Orthodontics</option>
+                                        <option value="emergency">Emergency Dental</option>
+                                        <option value="pediatric">Pediatric Dentistry</option>
+                                        <option value="cleaning">Teeth Cleaning</option>
+                                        <option value="whitening">Teeth Whitening</option>
+                                        <option value="checkup">Dental Checkup</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label for="message" class="block text-gray-700 font-medium mb-2">Additional Notes</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors" placeholder="Please describe your dental concern or any special requirements..."></textarea>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="consent" required class="w-4 h-4 text-primary rounded focus:ring-primary">
+                                    <label for="consent" class="ml-2 text-gray-700">
+                                        I agree to the <a href="#" class="text-primary hover:text-secondary">privacy policy</a> and consent to being contacted by the clinic
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="w-full bg-primary hover:bg-secondary text-white py-4 rounded-lg font-medium text-lg transition-colors">
+                                    Book Appointment Now
+                                </button>
+                                
+                                <p class="text-center text-gray-500 text-sm">
+                                    We'll contact you within 24 hours to confirm your appointment
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dental-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-tooth text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-heading font-bold">Dental Clinic Tanger</h3>
+                            <p class="text-sm text-white/70">Professional Dental Care</p>
+                        </div>
+                    </div>
+                    <p class="text-white/80 mb-6">
+                        Providing exceptional dental care in Tanger, Morocco with modern technology and compassionate service since 2008.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-primary rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-primary rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-primary rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-primary rounded-full flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-heading font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-white/80 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="text-white/80 hover:text-white transition-colors">Our Services</a></li>
+                        <li><a href="#doctors" class="text-white/80 hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="#about" class="text-white/80 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#appointment" class="text-white/80 hover:text-white transition-colors">Book Appointment</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-heading font-bold mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">General Dentistry</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Cosmetic Dentistry</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Dental Implants</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Orthodontics</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Emergency Dental</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-heading font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-primary mt-1"></i>
+                            <span class="text-white/80">123 Avenue Mohammed VI<br>Tanger 90000, Morocco</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-primary"></i>
+                            <div>
+                                <a href="tel:+212612345678" class="text-white/80 hover:text-white">+212 612-345-678</a>
+                                <p class="text-sm text-white/60">Emergency: +212 612-345-679</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <a href="mailto:info@dentalclinictanger.com" class="text-white/80 hover:text-white">info@dentalclinictanger.com</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-primary"></i>
+                            <span class="text-white/80">Mon-Fri: 8AM-8PM<br>Sat: 9AM-6PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-white/70 mb-4 md:mb-0">&copy; 2024 Dental Clinic Tanger. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-white/70 hover:text-white transition-colors text-sm">Privacy Policy</a>
+                    <a href="#" class="text-white/70 hover:text-white transition-colors text-sm">Terms of Service</a>
+                    <a href="#" class="text-white/70 hover:text-white transition-colors text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/212612345678" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg z-50 transition-colors">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+    </a>
+    
+    <script>
+        // Define clinic data
+        const clinicInfo = {
+            "name": "Dental Clinic Tanger",
+            "address": "123 Avenue Mohammed VI, Tanger 90000, Morocco",
+            "phone": "+212 612-345-678",
+            "emergencyPhone": "+212 612-345-679",
+            "email": "info@dentalclinictanger.com",
+            "hours": {
+                "weekdays": "8:00 AM - 8:00 PM",
+                "saturday": "9:00 AM - 6:00 PM",
+                "sunday": "Emergency Only"
+            },
+            "services": [
+                "General Dentistry",
+                "Cosmetic Dentistry",
+                "Dental Implants",
+                "Orthodontics",
+                "Emergency Dental",
+                "Pediatric Dentistry"
+            ]
+        };
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('animate-fade-in');
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (event) => {
+                if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        }
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const target = document.querySelector(targetId);
+                if (target) {
+                    // Close mobile menu if open
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Appointment form handling
+        const appointmentForm = document.getElementById('appointmentForm');
+        if (appointmentForm) {
+            appointmentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = {
+                    firstName: document.getElementById('firstName').value,
+                    lastName: document.getElementById('lastName').value,
+                    phone: document.getElementById('phone').value,
+                    email: document.getElementById('email').value,
+                    appointmentDate: document.getElementById('appointmentDate').value,
+                    appointmentTime: document.getElementById('appointmentTime').value,
+                    service: document.getElementById('service').value,
+                    message: document.getElementById('message').value
+                };
+                
+                // Validate required fields
+                if (!formData.firstName || !formData.lastName || !formData.phone || !formData.appointmentDate || !formData.appointmentTime || !formData.service) {
+                    alert('Please fill in all required fields marked with *');
+                    return;
+                }
+                
+                // Validate phone number (Moroccan format)
+                const phoneRegex = /^(\+212|0)[5-7]\d{8}$/;
+                if (!phoneRegex.test(formData.phone.replace(/\s/g, ''))) {
+                    alert('Please enter a valid Moroccan phone number (e.g., +212612345678 or 0612345678)');
+                    return;
+                }
+                
+                // Validate date (not in the past)
+                const selectedDate = new Date(formData.appointmentDate);
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                
+                if (selectedDate < today) {
+                    alert('Please select a future date for your appointment');
+                    return;
+                }
+                
+                // Simulate form submission
+                const confirmationMessage = `Thank you ${formData.firstName} ${formData.lastName}!\n\nYour appointment request has been received.\n\nDetails:\n- Date: ${formData.appointmentDate}\n- Time: ${formData.appointmentTime}\n- Service: ${formData.service}\n\nWe will contact you at ${formData.phone} within 24 hours to confirm your appointment.\n\nDental Clinic Tanger`;
+                
+                alert(confirmationMessage);
+                
+                // Reset form
+                this.reset();
+                
+                // Scroll to top of form
+                this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+            
+            // Set minimum date to today
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('appointmentDate').min = today;
+        }
+        
+        // Emergency call buttons
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.getAttribute('href').includes('emergency')) {
+                    const confirmCall = confirm('Are you sure you want to call the emergency dental line?');
+                    if (!confirmCall) {
+                        e.preventDefault();
+                    }
+                }
+            });
+        });
+        
+        // Service cards interaction
+        document.querySelectorAll('.bg-white.rounded-xl.shadow-lg').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // WhatsApp button confirmation
+        const whatsappButton = document.querySelector('a[href*="whatsapp"]');
+        if (whatsappButton) {
+            whatsappButton.addEventListener('click', function(e) {
+                if (!confirm('You will be redirected to WhatsApp to contact our clinic. Continue?')) {
+                    e.preventDefault();
+                }
+            });
+        }
+        
+        // Update copyright year
+        document.querySelectorAll('footer p:contains("2024")').forEach(element => {
+            if (element.textContent.includes('2024')) {
+                element.textContent = element.textContent.replace('2024', new Date().getFullYear());
+            }
+        });
+        
+        // Add loading animation to images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.classList.add('opacity-100');
+                this.classList.remove('opacity-0');
+            });
+            
+            // Add fade-in class
+            img.classList.add('transition-opacity', 'duration-500', 'opacity-0');
+        });
+        
+        // Initialize form date picker with Moroccan date format
+        const dateInput = document.getElementById('appointmentDate');
+        if (dateInput) {
+            // Set placeholder text
+            dateInput.setAttribute('placeholder', 'YYYY-MM-DD');
+            
+            // Add date format hint
+            const dateHint = document.createElement('small');
+            dateHint.className = 'text-gray-500 text-sm mt-1 block';
+            dateHint.textContent = 'Format: YYYY-MM-DD';
+            dateInput.parentNode.appendChild(dateHint);
+        }
+        
+        // Add phone number formatting
+        const phoneInput = document.getElementById('phone');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                
+                if (value.startsWith('212')) {
+                    value = '+' + value;
+                } else if (value.startsWith('0')) {
+                    value = '+212' + value.substring(1);
+                }
+                
+                // Format: +212 612-345-678
+                if (value.length > 3) {
+                    value = value.substring(0, 4) + ' ' + value.substring(4);
+                }
+                if (value.length > 8) {
+                    value = value.substring(0, 8) + '-' + value.substring(8);
+                }
+                if (value.length > 12) {
+                    value = value.substring(0, 12) + '-' + value.substring(12, 15);
+                }
+                
+                e.target.value = value;
+            });
+        }
+    </script>
+</body>
+</html>
